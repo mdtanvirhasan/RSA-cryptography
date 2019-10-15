@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+int gcd(int a,int b){
+  int c;
+  while(1)
+  {
+    c=a%b;
+    if(c==0)return b;
+    a=b;
+    b=c;
+  }
+}
+int main()
+{
+  double p,q,n,r,t;
+  printf("Enter first prime:");
+  scanf("%f",&p);
+  printf("Enter second prime:");
+  scanf("%f",&q);
+  n=p*q;
+  t=(p-1)*(q-1);
+  e=2;
+  while(e<t)
+  {
+    r=gcd(e,t);
+    if(r==1)break;
+    else
+      e++;
+  }
+  double d,memory;
+  double k=2;
+  d=(1+(k*t))/e;
+  printf("Enter data to encrypt:");
+  scanf("%f",&memory);
+  double c=
